@@ -15,3 +15,5 @@ Bu repoyu bilgisayarınıza indirdikten ve gerekli kütüphaneleri kurduktan son
 
 `streamlit run ocr.py` 
 
+by @avsaresra
+
