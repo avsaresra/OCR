@@ -12,4 +12,4 @@ st.title("Optik Karakter Okuyucu - Resim ve PDF dosyalarından metin çıkarım�
 #subtitle
 st.markdown("## `streamlit` ve `tesseract` kullanarak geliştirilmiş bir OCR Web uygulaması")
 
-st.markdown("")
+st.markdown("...")
