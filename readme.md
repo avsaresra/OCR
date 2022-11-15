@@ -7,8 +7,10 @@ Kullanıcı tarafından yüklenen resim dosyalarını metine veya PDF olarak yü
 Gerekli Kütüphaneler:
 * `streamlit` 
 * `tesseract-ocr` 
-* `numpy` 
+* `tesseract-ocr-tur` 
 * `Pillow`
+* `pytesseract`
+* `pymupdf`
 
 
 Bu repoyu bilgisayarınıza indirdikten ve gerekli kütüphaneleri kurduktan sonra aşağıdaki komut ile uygulamayı çalıştırabilirsiniz:
@@ -16,4 +18,5 @@ Bu repoyu bilgisayarınıza indirdikten ve gerekli kütüphaneleri kurduktan son
 `streamlit run ocr.py` 
 
 by @avsaresra
+
 
