@@ -86,7 +86,7 @@ def extract_text_from_image(file, language):
 
 # indirilebilir dosya oluşturmak gereken fonksiyon
 def download_text_from_result(text_data, filename, ocrdili):
-    st.write(" ### Metini aşağıdaki bağlantıdan indirebilirsiniz ###") #ekrana açıklama yazıyoruz
+    st.write(" ### Metni aşağıdaki bağlantıdan indirebilirsiniz ###") #ekrana açıklama yazıyoruz
     indirilecek_dosya = filename + ocrdili + ".txt" #indirilecek dosyanın adını dil parametresi ile oluşturuyoruz
     b64 = base64.b64encode(text_data.encode()).decode() #dosyayı indirilebilir hale getirmek için encode-decode işlemi yapıyoruz, yoksa streamlit'de oluşmuyor
     href = f'<a href="data:file/txt;base64,{b64}" download="{indirilecek_dosya}">Buraya Tıklayın!!!</a>' # tıklanıp indirilebilmesi için html etiketi oluşturuyoruz
