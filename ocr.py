@@ -81,7 +81,7 @@ def extract_text_from_image(file, language):
         # indirilebilir dosya oluşturmak için result değişkenini, dosya ismini ve dili parametrik olarak gönderiyoruz.
         download_text_from_result(result, file.name, language)
     
-    st.balloons()  # metin çıkarım işlemi yaptıktan sonra streamlit balonlarını gösteriyoruz (işlem başarılı anlamında)
+    st.balloons()  # metin çıkarım işlemi yaptıktan sonra streamlit balonlarını gösteriyoruz. (işlem başarılı anlamında)
 
 
 # indirilebilir dosya oluşturmak gereken fonksiyon
