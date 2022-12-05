@@ -137,4 +137,4 @@ if file is not None:  # eğer yüklenen dosya boş değilse, yani herhangi bir d
             #yüklenen dosya boş ise ya da desteklenen dosya türünde değilse ekrana uyarı metni göster
             st.markdown(f'<div class="alert alert-danger" role="alert">Lütfen bir Resim veya PDF belgesi yükleyiniz!</div>', unsafe_allow_html=True)
             
- st.caption("❤️ @avsaresra tarafından geliştirilmiştir.") 
+st.caption("❤️ @avsaresra tarafından geliştirilmiştir.") 
