@@ -46,12 +46,6 @@ def extract_text_from_image(file, language):
     with st.spinner("Resimden OCR işlemi çalışıyor!"):
 
         result = pytesseract.image_to_string(input_image, lang=language) # tesseract'a resim dosyasını ve dil parametresini gönderiyoruz ve metin çıktısını result olarak alıyoruz
-        
-       
-
-        result_text = []  # empty list for results
-        
-        
 
         st.write(result) # dönen metni ekrana yazdırıyoruz. 
 
