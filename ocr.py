@@ -122,8 +122,8 @@ if file is not None:  # eğer yüklenen dosya boş değilse, yani herhangi bir d
         elif file.type == "image/png" or " image/jpg" or " image/jpeg":  #yüklenen dosya türü resim dosyalarından biri ise (jpeg, jpg ya da png)
             st.markdown(f'<p>{"Dosya Türü:"} <i class="fa fa-file-image-o" style="font-size:30px;color:green"></i> Resim</p>', unsafe_allow_html=True) #dosyanın tipini ekrana yazdırıyoruz
             extract_text_from_image(file, ocr_dil) #resimden metin çıkarımı fonksiyonuna git
-        else:
-            #yüklenen dosya boş ise ya da desteklenen dosya türünde değilse ekrana uyarı metni göster
-            st.markdown(f'<div class="alert alert-danger" role="alert">Lütfen bir Resim veya PDF belgesi yükleyiniz!</div>', unsafe_allow_html=True)
+else:
+    #yüklenen dosya boş ise ya da desteklenen dosya türünde değilse ekrana uyarı metni göster
+    st.markdown(f'<div class="alert alert-danger" role="alert">Lütfen bir Resim veya PDF belgesi yükleyiniz!</div>', unsafe_allow_html=True)
             
 st.caption("❤️ @avsaresra tarafından geliştirilmiştir.") 
