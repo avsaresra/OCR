@@ -13,7 +13,7 @@ def extract_text_from_pdf(file, language):
     st.write("PDF dosyasından metin çıkarımı")
 
     PDF_file = file
-    #pages = convert_from_bytes(PDF_file.read(), output_folder=".", poppler_path=r'usr\bin')
+    
     
     #işlem devam ederken spinner/dönen yuvarlak gösteriyoruz.
     with st.spinner("PDF'den OCR işlemi çalışıyor!"):
@@ -34,8 +34,7 @@ def extract_text_from_pdf(file, language):
 
         download_text_from_result(all_t, file.name, language) #indirilebilir dosya oluşturmak için tüm metin değişkenini, dosya ismini ve dili parametrik olarak gönderiyoruz.
 
-        #for img in images:
-        #   os.remove(img)
+       
     st.balloons() #metin çıkarım işlemi yaptıktan sonra streamlit balonlarını gösteriyoruz (işlem başarılı anlamında)
 
 # Resim dosyasından metin çıkarımı fonksiyonu
@@ -49,14 +48,11 @@ def extract_text_from_image(file, language):
 
         result = pytesseract.image_to_string(input_image, lang=language) # tesseract'a resim dosyasını ve dil parametresini gönderiyoruz ve metin çıktısını result olarak alıyoruz
         
-        #result = reader.readtext(np.array(input_image))
+       
 
         result_text = []  # empty list for results
         
-        #st.write(result)
-
-        #for text in result:
-        #    result_text.append(text[1])
+        
 
         st.write(result) # dönen metni ekrana yazdırıyoruz. 
 
