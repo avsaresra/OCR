@@ -24,7 +24,6 @@ def extract_text_from_pdf(file, language):
         for page in doc: #doc değişkenindeki her bir sayfa için teker teker işlem yapıyoruz.
             pix = page.get_pixmap() #sayfanın görüntüsünü alıyor ve pix değişkenine aktarıyoruz
             filename = "page_" + str(image_counter) + ".JPEG" #dosya adını sayaç ile birlikte değişken isimde oluşturuyoruz
-            #st.write(filename)
             pix.save(filename) #pix değişkenindeki resim dosyasını kaydediyoruz.
             images.append(filename) #resim dizisine bu dosya adını ekliyoruz
             st.spinner(text='PDF OCR işlemi devam ediyor...')
